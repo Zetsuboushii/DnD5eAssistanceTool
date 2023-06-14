@@ -37,6 +37,7 @@ export default {
         },
         dice4() {
           this.randomNumber = Math.ceil(Math.random() * 4)
+          alert("Result =" + this.randomNumber)
         },
         dice6() {
           this.randomNumber = Math.ceil(Math.random() * 6)
@@ -177,27 +178,15 @@ export default {
 
             <v-divider></v-divider>
 
-            <v-list-group value="Items">
-              <template v-slot:activator="{ props }">
                 <v-list-item
                     class="mx-auto"
                     v-bind="props"
-                    title="Items"
                     prepend-icon="mdi-sack-outline"
-                ></v-list-item>
-              </template>
+                    append-icon="."
+                >
+                  <router-link to="/items">Items</router-link>
+                </v-list-item>
 
-              <v-divider></v-divider>
-
-              <v-list-item
-                  class="mx-auto"
-                  v-for="([title], i) in items"
-                  :key="i"
-                  :value="title"
-              >
-                <router-link :to="{name: 'items',params:{item: title}}">{{title}}</router-link>
-              </v-list-item>
-            </v-list-group>
 
             <v-divider></v-divider>
 
@@ -242,42 +231,42 @@ export default {
                 class="mx-auto"
                 title="d4"
                 prepend-icon="mdi-dice-4-outline"
-                append-icon="mdi-dice-4-outline"
+                append-icon="."
             ></v-list-item>
 
             <v-list-item v-on:click="dice6"
                          class="mx-auto"
                          title="d6"
                          prepend-icon="mdi-dice-6-outline"
-                         append-icon="mdi-dice-6-outline"
+                         append-icon="."
             ></v-list-item>
 
             <v-list-item v-on:click="dice8"
                          class="mx-auto"
                          title="d8"
                          prepend-icon="mdi-dice-d8-outline"
-                         append-icon="mdi-dice-d8-outline"
+                         append-icon="."
             ></v-list-item>
 
             <v-list-item v-on:click="dice10"
                          class="mx-auto"
                          title="d10"
                          prepend-icon="mdi-dice-d10-outline"
-                         append-icon="mdi-dice-d10-outline"
+                         append-icon="."
             ></v-list-item>
 
             <v-list-item v-on:click="dice12"
                          class="mx-auto"
                          title="d12"
                          prepend-icon="mdi-dice-d12-outline"
-                         append-icon="mdi-dice-d12-outline"
+                         append-icon="."
             ></v-list-item>
 
             <v-list-item v-on:click="dice20"
                          class="mx-auto"
                          title="d20"
                          prepend-icon="mdi-dice-d20-outline"
-                         append-icon="mdi-dice-d20-outline"
+                         append-icon="."
             ></v-list-item>
 
           </v-list-group>
