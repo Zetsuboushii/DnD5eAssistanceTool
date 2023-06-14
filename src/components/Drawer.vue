@@ -98,7 +98,7 @@ export default {
               <v-list-item
                   class="mx-auto"
                   v-bind="props"
-                  title="Database"
+                  title="Datenbank"
                   prepend-icon="mdi-database-outline"
               ></v-list-item>
             </template>
@@ -110,7 +110,7 @@ export default {
                 <v-list-item
                     class="mx-auto"
                     v-bind="props"
-                    title="Characters"
+                    title="Charaktere"
                     prepend-icon="mdi-account"
                 ></v-list-item>
               </template>
@@ -133,7 +133,7 @@ export default {
                 <v-list-item
                     class="mx-auto"
                     v-bind="props"
-                    title="Places"
+                    title="Orte"
                     prepend-icon="mdi-image-filter-hdr-outline"
                 ></v-list-item>
               </template>
@@ -202,7 +202,7 @@ export default {
                 <v-list-item
                     class="mx-auto"
                     v-bind="props"
-                    title="Monsters"
+                    title="Monster"
                     prepend-icon="mdi-skull-outline"
                 ></v-list-item>
               </template>
@@ -226,7 +226,7 @@ export default {
               <v-list-item
                   class="mx-auto"
                   v-bind="props"
-                  title="Dice"
+                  title="Würfel"
                   prepend-icon="mdi-dice-multiple-outline"
               ></v-list-item>
             </template>
@@ -282,7 +282,7 @@ export default {
               <v-list-item
                 class="mx-auto"
                 v-bind="props"
-                title="Generators"
+                title="Generatoren"
                 prepend-icon="mdi-cog-outline"
               ></v-list-item>
             </template>
@@ -293,7 +293,7 @@ export default {
               <v-list-item
                 class="mx-auto"
                 v-bind="props"
-                title="Notes"
+                title="Notizen"
                 prepend-icon="mdi-note-edit-outline"
                 ></v-list-item>
             </template>
