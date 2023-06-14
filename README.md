@@ -15,10 +15,10 @@
 
 ## Mitwirkende
 
-| Mitwirkende   | GitHub                                                                                                                                                                                |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Luke Grasser  | <a href="https://github.com/zetsuboushii"><img src="https://avatars.githubusercontent.com/u/65507051?v=4" width="100px;" alt=""/><br/>[Zetsuboushii](https://github.com/zetsuboushii) |
-| Nick Büttner  | <a href="https://github.com/knick21"><img src="https://avatars.githubusercontent.com/u/115408270?v=4" width="100px;" alt=""/><br/>[Knick21](https:/github.com/knick21)                 |
+| Mitwirkende  | GitHub                                                                                                                                                                                |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Luke Grasser | <a href="https://github.com/zetsuboushii"><img src="https://avatars.githubusercontent.com/u/65507051?v=4" width="100px;" alt=""/><br/>[Zetsuboushii](https://github.com/zetsuboushii) |
+| Nick Büttner | <a href="https://github.com/knick21"><img src="https://avatars.githubusercontent.com/u/115408270?v=4" width="100px;" alt=""/><br/>[Knick21](https:/github.com/knick21)                |
 
 
 
@@ -138,7 +138,7 @@ komplett implementiert sein soll.
 Dieser Meilenstein soll bis zum 10. Termin realisiert werden.\
 Der vierte und letzte Meilenstein widmet sich der Qualitätssicherung und der Finalisierung der Dokumentation.
 Das Programm soll bis dahin vollständig funktionsfähig sein und eine finale Oberfläche besitzen.
-Dieser Meilenstein soll bis zum letzen Termin realisiert werden.
+Dieser Meilenstein soll bis zum letzten Termin realisiert werden.
 
 ### 3 Analyse
 #### 3.1 Soll-Ist-Analyse
@@ -158,3 +158,47 @@ Den folgenden Kriterien *kann* die Applikation entsprechen:
 - Ein Pseudo-Zufallsgenerator für Würfel
 - Namensgenerator für NPCs und Orte
 - Bereich zum Speichern von Notizen
+
+### 4 Entwurf
+#### 4.1 Zielplattform
+Die Applikation soll vorerst auf Windows und Unix-basierten Computersystemen laufen.
+Zusätzlich sind Portierungen auf Android und iOS denkbar.
+##### 4.1.1 Technologien
+Die gewählte Technologie ist die Skriptsprache JavaScript in Kombination mit dem JavaScript Framework Vue.js.
+JavaScript ist die weit verbreitetste Skriptsprache für dynamische Webanwendungen, wohingegen Vue mitsamt dem
+Component Framework Vuetify eine einfache Möglichkeit Single-Page-Webanwendungen durch vorgefertigte Komponenten
+zu bauen.\
+Zudem sind webbasierte Anwendungen leicht auf andere Plattformen, wie Android und iOS zu porten.
+##### 4.1.2 Datenbank
+Datenbankseitig wird das relationale Datenbanksystem SQLite verwendet.
+SQLite benötigt keine Server-Software und lässt sich dadurch direkt in entsprechende Anwendungen integrieren.
+Da diese Applikation lokal auf dem Gerät des Nutzers laufen soll, bietet sich SQLite dafür perfekt an.\
+Ebenfalls sind existieren in SQLite nur wenige vereinfachte Datentypen für die Tabellen.
+
+#### 4.2 Benutzeroberfläche
+Um dem Anwendungsfall gerecht zu werden, wurde sich für eine möglichst simple, grafische Oberfläche entschieden.
+Ein konsistenter Navigation-Drawer ermöglicht das einfache Navigieren zwischen Subpages, dynamisch gerendert werden.
+
+#### 4.3 Datenmodell
+![Auszug des Datenbankmodells](public/main.png)
+
+Die Entität "Character" ist die wohl komplexeste. Aus diesem Grund wird exemplarisch auf diese und
+anhängende Entitäten eingegangen.\
+Ein Charakter besitzt:
+- einen Namen,
+- eine Klasse,
+- eine Klassenstufe,
+- Erfahrungspunkte,
+- Trefferpunkte,
+- eine Rüstungsklasse,
+- eine Bewegungsrate,
+- eine Rasse,
+- sowie eine Flag, ob ein Charakter ein NPC ist.
+
+Zudem kann ein Charakter bis zu n
+- Klassenattribute,
+- Fähigkeiten,
+- Items,
+- und Zaubersprüche besitzen.
+
+### 5 Implementierung
