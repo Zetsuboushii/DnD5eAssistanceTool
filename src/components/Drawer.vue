@@ -26,20 +26,20 @@ export default {
           ['Monster2'],
       ],
       notes: [
-          ["Notes1","/notes1"],
-          ["Notes2","/notes2"],
+        ["Notes1"],
+        ["Notes2"],
       ],
     }
   },methods:
       {
-        dice4()
-        {
-          this.randomNumber = Math.ceil(Math.random()*4)
-          alert("Result =" + this.randomNumber)
+        popuptest() {
+
         },
-        dice6()
-        {
-          this.randomNumber = Math.ceil(Math.random()*6)
+        dice4() {
+          this.randomNumber = Math.ceil(Math.random() * 4)
+        },
+        dice6() {
+          this.randomNumber = Math.ceil(Math.random() * 6)
           alert("Result =" + this.randomNumber)
         },
         dice8()
@@ -121,9 +121,10 @@ export default {
                   class="mx-auto"
                   v-for="([title], i) in characters"
                   :key="i"
-                  :title="title"
                   :value="title"
-              ></v-list-item>
+              >
+                <router-link :to="{name: 'characters',params:{char: title}}">{{title}}</router-link>
+              </v-list-item>
             </v-list-group>
 
             <v-divider></v-divider>
@@ -145,8 +146,9 @@ export default {
                   v-for="([title, icon], i) in places"
                   :key="i"
                   :value="title"
-                  :title="title"
-              ></v-list-item>
+              >
+                <router-link :to="{name: 'places',params:{place: title}}">{{title}}</router-link>
+              </v-list-item>
             </v-list-group>
 
             <v-divider></v-divider>
@@ -168,8 +170,9 @@ export default {
                   v-for="([title, icon], i) in quests"
                   :key="i"
                   :value="title"
-                  :title="title"
-              ></v-list-item>
+              >
+                <router-link :to="{name: 'quests',params:{quest: title}}">{{title}}</router-link>
+              </v-list-item>
             </v-list-group>
 
             <v-divider></v-divider>
@@ -191,8 +194,9 @@ export default {
                   v-for="([title], i) in items"
                   :key="i"
                   :value="title"
-                  :title="title"
-              ></v-list-item>
+              >
+                <router-link :to="{name: 'items',params:{item: title}}">{{title}}</router-link>
+              </v-list-item>
             </v-list-group>
 
             <v-divider></v-divider>
@@ -214,8 +218,9 @@ export default {
                   v-for="([title], i) in monsters"
                   :key="i"
                   :value="title"
-                  :title="title"
-              ></v-list-item>
+              >
+                <router-link :to="{name: 'monsters',params:{monster: title}}">{{title}}</router-link>
+              </v-list-item>
             </v-list-group>
 
             <v-divider></v-divider>
@@ -302,11 +307,11 @@ export default {
 
             <v-list-item
                 class="mx-auto"
-                v-for="([name,adress],i) in notes"
+                v-for="([title],i) in notes"
                 :key="i"
-                :value="name"
+                :value="title"
             >
-              <router-link :to="adress">{{ name }}</router-link>
+              <router-link :to="{name: 'notes',params:{note: title}}">{{title}}</router-link>
             </v-list-item>
           </v-list-group>
         </v-list>
