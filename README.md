@@ -63,8 +63,7 @@ npm run serve
    3. Datenmodell
 5. **Implementierung**
    1. Implementierung der Datenbank
-   2. Implementierung der Benutzeroberfläche
-   3. Implentierung des Backends
+   2. Implementierung der Anwendung
 
 ### 1 Einleitung
 #### 1.1 Projektumfeld
@@ -102,7 +101,6 @@ Die Gruppeneinteilung setzt sich grob folgendermaßen zusammen:
 | Frontendentwicklung | Nick Büttner, Luke Grasser |
 | Datenbankdesign     | Luke Grasser               |
 | Datenbankintegrität | Luke Grasser               |
-| Backendentwicklung  | Nick Büttner, Luke Grasser |
 | Schriftführung      | Luke Grasser               |
 
 Unabhängig von der Aufgabeneinteilung arbeiten alle Mitglieder des Projekts an allen Aufgaben
