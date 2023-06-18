@@ -61,9 +61,6 @@ npm run serve
       2. Datenbank
    2. Benutzeroberfläche
    3. Datenmodell
-5. **Implementierung**
-   1. Implementierung der Datenbank
-   2. Implementierung der Anwendung
 
 ### 1 Einleitung
 #### 1.1 Projektumfeld
@@ -198,5 +195,3 @@ Zudem kann ein Charakter bis zu n
 - Fähigkeiten,
 - Items,
 - und Zaubersprüche besitzen.
-
-### 5 Implementierung
