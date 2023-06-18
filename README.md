@@ -6,8 +6,8 @@
 <br>
 <p align="center">
   <img src="https://img.shields.io/maintenance/yes/2023?style=flat-square" />
-  <a href="https://github.com/jepiqueau/vue-sqlite-app"><img src="https://img.shields.io/github/license/zetsuboushii/dnd5eassistancetool?style=flat-square" /></a>
-  <a href="https://github.com/jepiqueau/vue-sqlite-app"><img src="https://img.shields.io/github/package-json/v/zetsuboushii/dnd5eassistancetool?style=flat-square" /></a>
+  <a href="https://github.com/Zetsuboushii/DnD5eAssistanceTool"><img src="https://img.shields.io/github/license/zetsuboushii/dnd5eassistancetool?style=flat-square" /></a>
+  <a href="https://github.com/Zetsuboushii/DnD5eAssistanceTool"><img src="https://img.shields.io/github/package-json/v/zetsuboushii/dnd5eassistancetool?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <a href="#contributors-"><img src="https://img.shields.io/badge/all%20contributors-2-orange?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
