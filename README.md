@@ -18,7 +18,7 @@
 | Mitwirkende  | GitHub                                                                                                                                                                                |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Luke Grasser | <a href="https://github.com/zetsuboushii"><img src="https://avatars.githubusercontent.com/u/65507051?v=4" width="100px;" alt=""/><br/>[Zetsuboushii](https://github.com/zetsuboushii) |
-| Nick Büttner | <a href="https://github.com/knick21"><img src="https://avatars.githubusercontent.com/u/115408270?v=4" width="100px;" alt=""/><br/>[Knick21](https:/github.com/knick21)                |
+| Nick Büttner | <a href="https://github.com/knick21"><img src="https://avatars.githubusercontent.com/u/115408270?v=4" width="100px;" alt=""/><br/>[Knick21](https://github.com/knick21)               |
 
 
 
